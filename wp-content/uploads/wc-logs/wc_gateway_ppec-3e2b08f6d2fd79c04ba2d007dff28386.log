@@ -1,0 +1,60 @@
+08-30-2017 @ 17:23:35 - WC_Gateway_PPEC_Client::_request: remote request to https://api-3t.sandbox.paypal.com/nvp with params: Array
+(
+    [METHOD] => GetPalDetails
+    [VERSION] => 120.0
+    [USER] => kfjlol-business_api1.yahoo.com
+    [PWD] => GSA6N9YUYZWYPPNK
+    [SIGNATURE] => AFcWxV21C7fd0v3bYYYRCpSSRl31AQPpCs87RZX4ExOkmqd.RCEwBi.q
+)
+
+08-30-2017 @ 17:23:36 - WC_Gateway_PPEC_Client::_process_response: acknowleged response body: Array
+(
+    [PAL] => MTE77HJF486PG
+    [LOCALE] => en_US
+    [TIMESTAMP] => 2017-08-30T14:23:35Z
+    [CORRELATIONID] => 5767f84abdd32
+    [ACK] => Success
+    [VERSION] => 120.0
+    [BUILD] => 36082234
+)
+
+08-30-2017 @ 17:25:53 - WC_Gateway_PPEC_Client::_request: remote request to https://api-3t.sandbox.paypal.com/nvp with params: Array
+(
+    [METHOD] => GetPalDetails
+    [VERSION] => 120.0
+    [USER] => kfjlol-business_api1.yahoo.com
+    [PWD] => GSA6N9YUYZWYPPNK
+    [SIGNATURE] => AFcWxV21C7fd0v3bYYYRCpSSRl31AQPpCs87RZX4ExOkmqd.RCEwBi.q
+)
+
+08-30-2017 @ 17:25:54 - WC_Gateway_PPEC_Client::_process_response: acknowleged response body: Array
+(
+    [PAL] => MTE77HJF486PG
+    [LOCALE] => en_US
+    [TIMESTAMP] => 2017-08-30T14:25:53Z
+    [CORRELATIONID] => a8c5cc86c596d
+    [ACK] => Success
+    [VERSION] => 120.0
+    [BUILD] => 36082234
+)
+
+08-30-2017 @ 17:26:04 - WC_Gateway_PPEC_Client::_request: remote request to https://api-3t.sandbox.paypal.com/nvp with params: Array
+(
+    [METHOD] => GetPalDetails
+    [VERSION] => 120.0
+    [USER] => kfjlol-business_api1.yahoo.com
+    [PWD] => GSA6N9YUYZWYPPNK
+    [SIGNATURE] => AFcWxV21C7fd0v3bYYYRCpSSRl31AQPpCs87RZX4ExOkmqd.RCEwBi.q
+)
+
+08-30-2017 @ 17:26:05 - WC_Gateway_PPEC_Client::_process_response: acknowleged response body: Array
+(
+    [PAL] => MTE77HJF486PG
+    [LOCALE] => en_US
+    [TIMESTAMP] => 2017-08-30T14:26:05Z
+    [CORRELATIONID] => 730b26a163b52
+    [ACK] => Success
+    [VERSION] => 120.0
+    [BUILD] => 36082234
+)
+
