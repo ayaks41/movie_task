@@ -21,9 +21,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $post;
-$product = wc_get_product($post->ID);
+$product = wc_get_product(get_the_ID());
 ?>
 
-<?php if ( $price_html = $product->get_price_html() ) : ?>
+<?php if ( $price_html = wc_price( wc_get_price_to_display( $product ) ) . $product->get_price_suffix() ) : ?>
 	<span class="price"><?php echo $price_html; ?></span>
 <?php endif; ?>

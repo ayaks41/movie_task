@@ -38,9 +38,9 @@
             <li <?php post_class('product'); ?>>
               <?php
               global $post;
-              $product = wc_get_product($post->ID);
+              $product = wc_get_product(get_the_ID());
 
-              $image_size = apply_filters( 'single_product_archive_thumbnail_size', $size );
+              $image_size = apply_filters( 'single_product_archive_thumbnail_size', 'shop_catalog');
               echo $product ? $product->get_image( $image_size ) : '';
               ?>
 
@@ -50,8 +50,6 @@
               wc_get_template( 'loop/add-to-cart.php');
               ?>
             </li>
-
- 					<?php// wc_get_template_part( 'content', 'product' ); ?>
 
  				<?php endwhile; ?>
 

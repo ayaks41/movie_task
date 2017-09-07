@@ -3,7 +3,7 @@
 function extra_register_field() { ?>
        <p class="form-row form-row-wide">
        <label for="skype"><?php _e( 'Skype', 'woocommerce' ); ?></label>
-       <input type="text" class="input-text" name="skype" id="skype" value="<?php esc_attr_e( $_POST['skype'] ); ?>" />
+       <input type="text" class="input-text" name="skype" id="skype" value="" />
        </p>
        <div class="clear"></div>
        <?php
@@ -33,7 +33,7 @@ function remove_password_strength() {
 add_action( 'wp_print_scripts', 'remove_password_strength', 100 );
 
 //Adding movie custom field like a price to woocommerce
-add_filter('woocommerce_get_price','reigel_woocommerce_get_price',20,2);
+add_filter('woocommerce_product_get_price','reigel_woocommerce_get_price',20,2);
 function reigel_woocommerce_get_price($price,$post){
 	if ($post->post->post_type === 'movie')
 		$price = get_post_meta($post->id, "_price", true);

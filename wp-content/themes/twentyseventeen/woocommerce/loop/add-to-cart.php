@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $post;
-$product = wc_get_product($post->ID);
+$product = wc_get_product(get_the_ID());
 
 echo apply_filters( 'woocommerce_loop_add_to_cart_link',
 	sprintf( '<a rel="nofollow" href="%s" data-quantity="%s" data-product_id="%s" data-product_sku="%s" class="%s">%s</a>',
@@ -30,6 +30,6 @@ echo apply_filters( 'woocommerce_loop_add_to_cart_link',
 		esc_attr( $product->get_id() ),
 		esc_attr( $product->get_sku() ),
 		esc_attr( isset( $class ) ? $class : 'button ajax_add_to_cart' ),
-		esc_html( $product->add_to_cart_text() )
+		esc_html( $product->single_add_to_cart_text() )
 	),
 $product );
