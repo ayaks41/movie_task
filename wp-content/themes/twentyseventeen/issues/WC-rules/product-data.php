@@ -32,13 +32,7 @@ function remove_password_strength() {
 }
 add_action( 'wp_print_scripts', 'remove_password_strength', 100 );
 
-//Adding movie custom field like a price to woocommerce
-add_filter('woocommerce_product_get_price','reigel_woocommerce_get_price',20,2);
-function reigel_woocommerce_get_price($price,$post){
-	if ($post->post->post_type === 'movie')
-		$price = get_post_meta($post->id, "_price", true);
-	return $price;
-}
+
 
 //Rewrite WooCommecre class to custom class, which add possibility to add to cart movie posts
 function woocommerce_data_stores ( $stores ) {
